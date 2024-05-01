@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --primary-color: #f3eae5;
+    --text-dark: #2c2724;
+    --white: #ffffff;
+    --max-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    width: var(--max-width);
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+    /* border: .5px solid black; */
+
+}
+
+.lgo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 2rem;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    list-style: none;
+}
+
+nav>ul>li {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 1rem;
+}
+
+nav>.btn {
+
+    margin: 0 1.5rem;
+}
+
+nav>.btn>button {
+    background: none;
+    border: none;
+}
+
+nav>.btn>button>i {
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+
+    /* display: grid; */
+    width: 100%;
+    padding: 0 1rem;
+    height: 75vh;
+    /* grid-template-columns: 2fr 2fr; */
+}
+
+.left {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 2rem;
+    padding-top: 50px;
+
+}
+
+.left>h1 {
+    width: 70%;
+    margin: 1rem 0;
+    font-size: 56px;
+    line-height: 72px;
+    font-weight: 700;
+}
+
+.left>.btn {
+    margin: 1rem 0;
+}
+
+.left>.btn>button {
+    color: #ffff;
+    background-color: var(--text-dark);
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 1rem 2.5rem;
+    border-radius: 1.5rem;
+    border: none;
+    transition: all 0.5s;
+
+}
+
+.left>.btn>button:hover {
+    background-color: var(--primary-color);
+    color: var(--text-dark);
+}
+
+.right {
+    position: relative;
+    width: 100%;
+    /* background-color: rgb(35, 104, 104); */
+}
+
+.right>.content {
+    position: absolute;
+    left: -15%;
+    top: 11%;
+    width: 110%;
+    height: 110%;
+
+}
+
+.content::before {
+    position: absolute;
+    content: '';
+    width: 110%;
+    height: 110%;
+    border-radius: 1rem;
+    background-color: var(--primary-color);
+}
+
+.right>.content>.textContent {
+    /* border: 1px solid salmon; */
+    position: absolute;
+    width: 60%;
+    padding-right: 10%;
+    right: 0;
+    top: 30%;
+    color: var(--text-dark);
+}
+
+.right>.content>.textContent>h4 {
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.right>.content>.textContent>h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.right>.content>.textContent>h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.right>.content>.textContent>p {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+.right>images {
+    position: absolute;
+    border: 1px solid red;
+}
+
+.right>.images>img:nth-child(1) {
+    position: absolute;
+    /* width: 55%; */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    top: 20%;
+    left: -30%;
+    z-index: 1;
+    border-radius: 1rem;
+}
+
+.right>.images>img:nth-child(2) {
+    position: absolute;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    width: 36%;
+    bottom: -30%;
+    left: -10%;
+    z-index: 2;
+    border-radius: 1rem;
+}
+
+.container_2 {
+    width: 100%;
+    height: 15vh;
+    /* border: 1px solid saddlebrown; */
+    margin-top: 6rem;
+    position: relative;
+}
+
+.container_2>.location {
+    width: 20%;
+    height: 70%;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 3.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.container_2>.location>span {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #ffff;
+}
+
+.container_2>.location>span>i {
+    font-size: 24px;
+}
+
+.container_2>.socials {
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    margin-right: 3.5rem;
+
+}
+
+.container_2>.socials>span>a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0.2rem;
+    color: #2c2724;
+}
